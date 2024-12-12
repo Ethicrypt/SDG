@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex Dice Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Input Page -->
+    <div id="input-page" class="input-page">
+        <div class="container">
+            <h1 class="game-title">Sex Dice Game</h1>
+
+            <!-- Input Form for Male and Female Names -->
+            <div class="name-inputs">
+                <div class="input-container">
+                    <label for="male-name">Enter Male Name</label>
+                    <input type="text" id="male-name" placeholder="Enter Male Name">
+                </div>
+                <div class="input-container">
+                    <label for="female-name">Enter Female Name</label>
+                    <input type="text" id="female-name" placeholder="Enter Female Name">
+                </div>
+            </div>
+
+            <!-- Start Game Button -->
+            <button id="start-game" class="start-btn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="game-page" style="display: none;">
+        <div class="container">
+            <h1 class="game-title">Sex Dice Game</h1>
+
+            <!-- Dice Display -->
+            <div id="dice-container">
+                <div class="dice-item">
+                    <div id="dice-1" class="dice">Action</div>
+                </div>
+                <div class="dice-item">
+                    <div id="dice-2" class="dice">BodyPart</div>
+                </div>
+                <div class="dice-item">
+                    <div id="dice-3" class="dice">Time</div>
+                </div>
+            </div>
+
+            <!-- Turn Indicator -->
+            <div id="turn-indicator">It's Male's Turn</div>
+
+            <!-- Roll Dice Button -->
+            <button id="roll-dice" class="roll-btn">Roll Dice</button>
+
+            <!-- Turn Register Info -->
+            <div id="turn-register" class="turn-register">
+                <h2>Turn Register</h2>
+                <ul id="turn-log"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
